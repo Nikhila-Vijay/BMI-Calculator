@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.KpdaMiAXcKfWTE8hH9we2gAAAA?rs=1&pid=ImgDetMain">
+    <link rel="stylesheet" href="./style.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <nav class="navbar">
+                <img src="https://c8.alamy.com/comp/2JD18JJ/cartoon-illustration-with-bmi-cartoon-vector-illustration-medical-concept-2JD18JJ.jpg" alt="" height="80px" width="100px">
+                
+                <ul>
+                    <li> <a href="#home" class="link"> HOME</a></li>
+                    <li> <a href="#calc" class="link"> BMI Calculator</a></li>
+                    <li> <a href="#faq" class="link"> FAQ</a></li>
+                    
+                
+                </ul>
+            </nav>
+        </div>
+        <div id="home">
+            <h1 style="color: red;">Body Mass Index(BMI)</h1>
+            <p style="font-size: 20px; text-align: left; margin-top: -20px;">
+                BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+        </div>
+        <div id="calc" class="box">
+            <h1>BMI Calculator</h1>
+            <div class="gender">
+                <h4>Gender :</h4>
+                <input type="radio" name="gender" id="male">
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="">Female</label>
+
+            </div>
+            <div class="content">
+                <div class="input">
+                    <label for="height">Height(cm)</label>
+                    <input type="number"  id="height">
+                </div>
+                <div class="input">
+                    <label for="weight">Weight(kg)</label>
+                    <input type="number" id="weight">
+                </div>
+
+                <div>
+                   <button id="reset" onclick="reset()">Reset</button>
+                   <button id="calculate">Calculate BMI</button>
+                </div>
+
+                <div class="result">
+                    <h2>Your BMI is</h2>
+                    <div id="result">00.00</div>
+                    <p class="comment"></p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <h2>BMI Range</h2>
+            <img style="margin-top: 20px;" src="https://th.bing.com/th/id/OIP.LgL-ZiUP0E5sF2hGMYOXXQHaEK?rs=1&pid=ImgDetMain" alt="" width="50%">
+        </div>
+        <div id="faq" style="margin-top: 20px;">
+            <h2>BMI Chart for Adults</h2>
+            <p style="margin-top: 20px; font-size: 20px;">This is a graph of BMI categories based on the World Health Organization data. The dashed lines represent subdivisions within a major categorization.</p>
+            <img src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" alt="">
+            <h2 style="margin-top: 30px;">Risks asscocited with being OVERWEIGHT</h2>
+            <pre style="font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+                  1.High blood pressure
+                  2.Higher levels of LDL cholesterol, which is widely considered "bad cholesterol," lower levels of 
+                  HDL cholesterol, considered to be good cholesterol in moderation, and high levels of triglycerides
+                  3.Type II diabetes
+                  4.Coronary heart disease
+                  5.Stroke
+                  6.Gallbladder disease
+                  7.Osteoarthritis, a type of joint disease caused by breakdown of joint cartilage
+                  8.Sleep apnea and breathing problems
+                  9.Certain cancers (endometrial, breast, colon, kidney, gallbladder, liver)
+                  10.Low quality of life
+                  11.Mental illnesses such as clinical depression, anxiety, and others
+                  12.Body pains and difficulty with certain physical functions
+                  13.Generally, an increased risk of mortality compared to those with a healthy BMI
+ 
+As can be seen from the list above, there are numerous negative, in some cases fatal, outcomes that may result from being overweight. Generally,
+a person should try to maintain a BMI below 25 kg/m2, but ideally should consult their doctor to determine whether or not they need to make any
+changes to their lifestyle in order to be healthier.
+</pre>
+            
+
+            <h2 style="margin-top: 30px;">Risks associated with being UNDERWEIGHT</h2>
+            <pre style="font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                
+                        1.Malnutrition, vitamin deficiencies, anemia (lowered ability to carry blood vessels)
+                        2.Osteoporosis, a disease that causes bone weakness, increasing the risk of breaking a bone
+                        3.A decrease in immune function
+                        4.Growth and development issues, particularly in children and teenagers
+                        5.Possible reproductive issues for women due to hormonal imbalances that can disrupt the menstrual cycle. Underweight women also have a higher chance of miscarriage in the first trimester
+                        6.Potential complications as a result of surgery
+                        7.Generally, an increased risk of mortality compared to those with a healthy BMI
+
+In some cases, being underweight can be a sign of some underlying condition or disease such as anorexia nervosa, which has its own risks.
+Consult your doctor if you think you or someone you know is underweight, particularly if the reason for being underweight does not seem 
+obvious.
+            </pre>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                
+                <div class="icon-set">
+                    
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <p>Copyright &copy; 2024. All Rights Reserved. www.bmicalculator.com</p>
+                
+            </div>
+            
+        </footer>
+    </div>
+    
+</body>
+
+<script src="./logic.js"></script>
+
+</html>
